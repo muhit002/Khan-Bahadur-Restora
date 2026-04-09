@@ -245,7 +245,7 @@ export function MenuManagementPage() {
   };
 
   return (
-    <DashboardLayout title="Menu Management" subtitle="Manage categories, pricing, discounts, stock visibility, and images.">
+    <DashboardLayout title="Menu Management">
       <div className="row g-4">
         <div className="col-xl-5">
           <ManagementForm title={editingId ? "Edit Menu Item" : "Add Menu Item"} onSubmit={handleSubmit} submitLabel={uploading ? "Uploading..." : editingId ? "Update Menu Item" : "Create Menu Item"}>

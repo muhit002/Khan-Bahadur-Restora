@@ -317,7 +317,7 @@ export function MenuPage() {
       <div className="container">
         <SectionHeading
           title="Order From the Menu"
-          subtitle="Pick dishes, adjust quantity, and send everything to your cart in one clean step."
+          
         />
 
         <div className="glass-panel p-4 mb-4">
@@ -425,9 +425,6 @@ export function LoginPage() {
       <div className="auth-card">
         <span className="hero-badge mb-3">{brand.label}</span>
         <h1 className="section-title mb-3">Sign in to {brand.name}</h1>
-        <p className="text-secondary mb-4">
-          Access dashboards, orders, payments, and customer service tools from one connected {brand.name} workspace.
-        </p>
         <form className="row g-3" onSubmit={handleSubmit}>
           <div className="col-12">
             <label className="form-label">Email</label>
@@ -456,9 +453,6 @@ export function LoginPage() {
             </button>
           </div>
         </form>
-        <div className="mt-4 small text-secondary">
-          Default admin: <strong>admin@restaurant.com</strong> / <strong>Admin@123</strong>
-        </div>
         <div className="mt-2">
           <Link to="/register">Need a customer account? Register here.</Link>
         </div>

@@ -177,7 +177,6 @@ export function AdminDashboardPage() {
   return (
     <DashboardLayout
       title="Admin Dashboard"
-      subtitle="High-level financial, staffing, and performance visibility for the whole operation."
     >
       <DashboardContent data={data} loading={loading} error={error} reload={reload} title="Admin dashboard">
         {(loadedData) => {
@@ -193,7 +192,6 @@ export function AdminDashboardPage() {
               <DashboardBanner
                 eyebrow={brand.label}
                 title={`${brand.name} Command Center`}
-                description="Track revenue, staffing, menu activity, and stock exposure from one executive snapshot."
                 imageSrc={resolveImageUrl(dashboardBanners.admin)}
               />
               <StatsRow
